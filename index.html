@@ -13,7 +13,21 @@
             <div class="result" id="result">0</div>
         </div>
         <div class="buttons">
+
             <button class="shift" onclick="toggleShift()">Shift</button>
+            <button class="" onclick=""></button>
+            <button class="" onclick=""></button>
+            <button class="" onclick=""></button>
+
+            <button class="function" onclick="appendValue('(')">(</button>
+            <button class="function" onclick="appendValue(')')">)</button>
+            <button class="function" onclick="calculateLog()">log</button>
+            <button class="function" onclick="calculateLn()">ln</button>
+           
+
+
+
+            <button class="function" onclick="appendE()">e</button>
             <button class="function" id="sinBtn" onclick="calculateTrig('sin')">
                 <span class="small-text" id="sinSmall">sin⁻¹</span>
                 sin
@@ -51,6 +65,8 @@
             <button class="number" onclick="appendValue('0')">0</button>
             <button class="number" onclick="appendPi()">π</button>
             <button class="equals" onclick="calculateResult()">=</button>
+
+           
         </div>
     </div>
 
