@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آلة حاسبة</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="operation" id="operation"></div>
+            <div class="result" id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="shift" onclick="toggleShift()">Shift</button>
+            <button class="function" id="sinBtn" onclick="calculateTrig('sin')">
+                <span class="small-text" id="sinSmall">sin⁻¹</span>
+                sin
+            </button>
+            <button class="function" id="cosBtn" onclick="calculateTrig('cos')">
+                <span class="small-text" id="cosSmall">cos⁻¹</span>
+                cos
+            </button>
+            <button class="function" id="tanBtn" onclick="calculateTrig('tan')">
+                <span class="small-text" id="tanSmall">tan⁻¹</span>
+                tan
+            </button>
+
+            <button class="function" onclick="calculateSquareRoot()">√</button>
+            <button class="function" onclick="calculateSquare()">x²</button>
+            <button class="function" onclick="appendOperator('**')">^</button>
+            <button class="Cancel" onclick="clearDisplay()">C</button>
+
+            <button class="number" onclick="appendValue('7')">7</button>
+            <button class="number" onclick="appendValue('8')">8</button>
+            <button class="number" onclick="appendValue('9')">9</button>
+            <button class="operator" onclick="appendOperator('/')">/</button>
+
+            <button class="number" onclick="appendValue('4')">4</button>
+            <button class="number" onclick="appendValue('5')">5</button>
+            <button class="number" onclick="appendValue('6')">6</button>
+            <button class="operator" onclick="appendOperator('*')">*</button>
+
+            <button class="number" onclick="appendValue('1')">1</button>
+            <button class="number" onclick="appendValue('2')">2</button>
+            <button class="number" onclick="appendValue('3')">3</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+
+            <button class="number" onclick="appendValue('.')">.</button>
+            <button class="number" onclick="appendValue('0')">0</button>
+            <button class="number" onclick="appendPi()">π</button>
+            <button class="equals" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="calc.js"> </script>
+</body>
+</html>
